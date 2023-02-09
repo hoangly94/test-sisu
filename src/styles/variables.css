@@ -1,0 +1,39 @@
+:root{
+    --max-screen-width: 1240px;
+    --primary-color: #0f4fe1;
+    --secondary-color: #fff;
+    --background-hover: #e6e6e6;
+    --border-color: #cdcdcd;
+    --border-radius: 2px;
+    --title-color: #181818;
+
+    --text-color: #000; 
+
+    --font-size-s: 10px;
+    --font-size-m: 14px;
+    --font-size-l: 18px;
+    --font-size-xl: 22px;
+    --font-size-2xl: 26px;
+    --font-size-3xl: 30px;
+
+    --spacing-s: 4px;
+    --spacing-m: 8px;
+    --spacing-l: 12px;
+    --spacing-xl: 16px;
+    --spacing-2xl: 20px;
+    --spacing-3xl: 24px;
+
+    --size-s: 20px;
+    --size-m: 28px;
+    --size-l: 36px;
+    --size-xl: 44px;
+
+    --table-border-color: #eee;
+    --table-header-weight: 500;
+    /* --table-header-background:  */
+    --table-header-color: #999;
+    --table-header-background-color: #f6f6f6;
+
+    --input-focus-border-color: #72baff;
+    --dropdown-item-hover-background-color: #f1f1f1;
+}

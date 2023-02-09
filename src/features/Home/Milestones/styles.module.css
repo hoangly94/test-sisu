@@ -1,0 +1,63 @@
+.milestones{
+    &>*:nth-child(even){
+        flex-direction: row-reverse;
+    }
+}
+
+.milestone{
+    padding: 64px 32px;
+    border-radius: 20px;
+    margin-top:50px;
+    @media (--sm){
+        display:flex;
+        justify-content: space-between;
+        gap: 56px;
+        margin-top:100px;
+    }
+}
+
+.image{
+    width: 100%;
+    @media (--sm){
+        width: 380px;
+    }
+}
+
+.info{
+    flex:1;
+}
+
+.name{
+    display: inline-block;
+    background: #0f4fe1;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 32px;
+}
+.title{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 22px;
+    @media (--sm){
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+.description{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 180%;
+    margin-top: 28px;
+    @media (--sm){
+        margin-top: 45px;
+    }
+    &>br{
+        margin-bottom: 32px;
+        display: block;
+    }
+}

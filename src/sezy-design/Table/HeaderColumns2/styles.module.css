@@ -1,0 +1,127 @@
+.sezy-table_column{
+  display: inline-flex;
+  flex-direction: column;
+  white-space: nowrap;
+  font-weight: var(--table-header-weight);
+  /* >div{
+    display: inline-flex;
+    background-color: var(--table-header-background-color);
+  }
+  >div:not(:last-child){
+    flex:1;
+    &:hover{
+      background-color: var(--background-hover);
+    }
+  } */
+  &_header{
+    height: var(--size-l);
+    line-height: var(--size-l);
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    position: relative;
+    background-color: var(--table-header-background-color);
+    &:not(:last-child){
+      width: 500px;
+    }
+    >*:first-child{
+      padding: 0 var(--spacing-m);
+      flex:1;
+    }
+  }
+  &_header-settings{
+    >div{
+      height: var(--size-l);
+      /* width:  var(--size-l); */
+      line-height: var(--size-l);
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      &:hover{
+        background-color: var(--background-hover);
+      }
+    }
+  }
+  &_body{
+    border: 1px solid var(--table-border-color);
+    border-right:0;
+    >div{
+      height: var(--size-m);
+      line-height: var(--size-m);
+      &:not(:last-child){
+        border-bottom: 1px solid var(--table-border-color);
+      }
+    }
+  }
+}
+
+
+.sezy-table_header{
+  &_icon{
+    background-color: var(--table-header-color);
+  }
+  &_sort{
+    position: absolute;
+    top: 12px;
+    right: var(--spacing-m);
+    background-color: var(--table-header-color);
+    [direction=down]{
+      transform: rotate(90deg);
+    }
+  }
+  &_dropdown{
+    &_options{
+      width: 250px;
+      min-width: 0 !important;
+    }
+    &_header{
+      display: flex;
+      justify-content: space-between;
+      gap:  var(--spacing-m);
+      padding: var(--spacing-l) var(--spacing-m);
+      &>*:last-child{
+        flex: 1;
+      }
+    }
+    &_item-group{
+      border-top: 1px solid #eee;
+      &>div{
+        padding: var(--spacing-m);
+        text-transform: capitalize;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        &>i{
+          margin-right: var(--spacing-m);
+        }
+        &:hover{
+          background-color: var(--dropdown-item-hover-background-color);
+        }
+      }
+    }
+  }
+}
+
+.sezy-table-last_column{
+  width: 72px;
+  white-space: nowrap;
+  &>div{
+    &>div{
+      height: var(--size-l);
+      width:  var(--size-l);
+      line-height: var(--size-l);
+      text-align: center;
+      &:hover{
+        background-color: var(--background-hover);
+      }
+    }
+  }
+
+  i{
+    background: var(--table-header-color);
+  }
+}
+
+.sezy-table-header_dropdown{
+  width: 24rem;
+}

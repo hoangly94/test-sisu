@@ -1,0 +1,23 @@
+.sezy-table_column-type-picker{
+    display: inline-block;
+    &_selected{
+
+    }
+    &_options{
+        >div{
+            width: 288px;
+        }
+        &_header{
+            border-bottom: 1px solid var(--background-hover);
+            margin-bottom: var(--spacing-m);
+            padding: var(--spacing-l) var(--spacing-xl);
+            text-transform: capitalize;
+        }
+        &_body{
+            padding: var(--spacing-m) 0;
+            &>*:first-child{
+                margin: 0 var(--spacing-xl) var(--spacing-s);
+            }
+        }
+    }
+}

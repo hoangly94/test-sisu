@@ -1,0 +1,88 @@
+
+html{
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Roboto', sans-serif !important; */
+  background: var(--background-color) !important;
+  color: var(--text-color);
+  /* font-family: 'Roboto', sans-serif; */
+  scroll-behavior: smooth  !important;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* ::-webkit-scrollbar-track {
+  border-radius: 10px;
+} */
+
+::-webkit-scrollbar-thumb:vertical {
+  background: #00000088;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background: #00000038;
+  border-radius: 2px;
+}
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+
+.hl-button{
+  display: inline-block;
+  border: 0;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 5px 8px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+
+  svg{
+    fill: var(--primary-color);
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  &:hover{
+    background: var(--background-hover);
+  }
+}
+
+button{
+  border: 0;
+}
+
+i{
+  background-color: var(--text-color);
+  display:inline-block;
+  vertical-align: middle;
+  user-select: none;
+}
+
+.__react_component_tooltip{
+  min-height: 18px;
+}

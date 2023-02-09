@@ -1,0 +1,17 @@
+{
+    "home":"home",
+    "posts":"posts",
+    "allPosts":"all posts",
+    "addNewPost":"add new post",
+    "categories":"categories",
+    "media":"media",
+    "users":"users",
+    "settings":"settings",
+    "logIn":"log in",
+    "logOut":"log out",
+    "title":"title",
+    "description":"description",
+    "publish":"publish",
+    "featuredImage":"featured image",
+    "pages": "pages"
+}

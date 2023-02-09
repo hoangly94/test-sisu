@@ -1,0 +1,37 @@
+.container{
+  height: var(--header-height);
+  padding: 0 20px;
+  background: var(--secondary-color);
+}
+
+.content{
+  height: 100%;
+  display:flex;
+  justify-content: space-between;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+}
+
+.avatar{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  svg{
+    font-size:20px;
+  }
+
+}

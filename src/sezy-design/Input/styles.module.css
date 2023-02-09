@@ -1,0 +1,22 @@
+.sezy-input{
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    transition: all 0.3s;
+    background-color: #fff;
+    height: var(--size-m);
+    padding: 0 var(--spacing-m);
+    &>input{
+        width: 100%;
+        height: var(--size-m);
+        box-sizing: border-box;
+        border: 0;
+        background-color: transparent;
+        &:focus{
+            outline: none;
+        }
+    }
+    &:has(>input:focus) {
+        border: 1px solid var(--input-focus-border-color);
+        box-shadow: 0px 0px 3px 0px rgba(114,186,255,0.63);
+    }
+}

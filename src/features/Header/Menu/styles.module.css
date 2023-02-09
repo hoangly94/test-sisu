@@ -1,0 +1,29 @@
+.menu{
+  /* height: 100%; */
+  display: none;
+  @media (--sm){
+    display:flex;
+    gap: 32px;
+    width: 70%;
+  }
+
+  >a{
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+.active{
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    width: calc(100% + 16px);
+    height: 6px;
+    left: -9px;
+    bottom: -10px;
+    background: #0f4fe1;
+    opacity: .4;
+  }
+}

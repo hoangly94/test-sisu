@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    //set absolute path
+    "baseUrl": ".",
+    "paths": {
+      "@/configs/*": ["./configs/*"],
+      "@/features/*": ["./src/features/*"],
+      "@/partials/*": ["./src/partials/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/constants/*": ["./src/constants/*"],
+      "@/guards/*": ["./src/guards/*"],
+      "@/store": ["src/store/index.ts"],
+      "@/store/*": ["src/store/*"],
+      "@/utils": ["src/utils/index.ts"],
+      "@/hooks": ["src/hooks/index.ts"],
+      "@/css/*": ["src/css/*.css"],
+      "@/sezy-design/*": ["src/sezy-design/*"],
+      "@/sezy-icons": ["src/partials/Icon/index.tsx"],
+      "@/sezy-icons/*": ["src/partials/Icon/*"],
+      "@/public/*": ["public"],
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "*.js",
+    "src/features/Trade/Tradingview/index.jsx"
+  ],
+  "exclude": ["node_modules"],
+  "strictNullChecks": "true"
+}

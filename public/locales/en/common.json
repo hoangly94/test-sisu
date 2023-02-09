@@ -1,0 +1,12 @@
+{
+    "home":"home",
+    "posts":"posts",
+    "allPosts":"all posts",
+    "categories":"categories",
+    "users":"users",
+    "settings":"settings",
+    "signIn":"sign in",
+    "signOut":"sign out",
+    "title":"title",
+    "search":"search"
+}
