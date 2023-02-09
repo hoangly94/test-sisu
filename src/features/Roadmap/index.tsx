@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 import Header from '@/features/Header';
 import Banner from './Banner';
 import Milestones from './Milestones';
+import Footer from '../Footer';
 
 const Roadmap = () => {
   return (
@@ -13,6 +14,7 @@ const Roadmap = () => {
         <Banner/>
         <Milestones/>
       </div>
+      <Footer/>
     </>
   );
 };

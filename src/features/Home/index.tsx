@@ -5,6 +5,7 @@ import Banner from './Banner';
 import Milestones from './Reinforcings';
 import Features from './Features';
 import RegisterNow from '@/partials/RegisterNow';
+import Footer from '../Footer';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Features/>
         <RegisterNow/>
       </div>
+      <Footer/>
     </>
   );
 };

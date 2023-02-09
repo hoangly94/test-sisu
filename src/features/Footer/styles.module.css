@@ -1,0 +1,29 @@
+.footer{
+  text-align: center;
+  padding: 50px 0;
+}
+
+
+.logo{
+  @media (--xs){
+    display: none;
+  }
+  >img{
+    width: 128px;
+    margin-top: 88px;
+  }
+}
+
+.copyRight{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 88px;
+}
+
+.socials{
+  display: inline-flex;
+  gap: 36px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
