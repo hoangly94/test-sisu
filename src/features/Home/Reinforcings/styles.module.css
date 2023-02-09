@@ -1,0 +1,47 @@
+.reinforcings{
+    gap:16px;
+    box-sizing: border-box;
+    @media (--sm){
+        display: flex;
+    }
+}
+
+.reinforcing{
+    margin-bottom: 16px;
+    padding: 42px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    flex:1;
+}
+
+.image{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info{
+}
+
+.title{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 22px;
+    @media (--sm){
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+.description{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 180%;
+    @media (--sm){
+        margin-top: 28px;
+    }
+    &>br{
+        margin-bottom: 32px;
+        display: block;
+    }
+}

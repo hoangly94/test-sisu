@@ -3,30 +3,30 @@ import styles from './styles.module.css';
 import classNames from 'classnames';
 
 export interface ButtonProps {
-  isDisabled?: boolean,
+  href?: string,
   className?: string,
   onClick?: React.MouseEventHandler;
-  children: React.ReactElement
+  children: any
 }
 
 export default (
   {
-    isDisabled,
+    href,
     className,
     onClick,
     children
   }: ButtonProps
 ) => {
   return (
-    <button
+    <a
       className={classNames(
         styles['button'],
         className,
       )}
-      disabled={isDisabled}
+      {...(href ? {href} : {})}
       onClick={onClick}
     >
       {children}
-    </button>
+    </a>
   )
 }

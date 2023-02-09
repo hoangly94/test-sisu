@@ -1,0 +1,84 @@
+.features{
+    &>*:nth-child(even){
+        flex-direction: row-reverse;
+    }
+}
+
+.feature{
+    padding: 64px 32px;
+    border-radius: 20px;
+    margin-top:10px;
+    @media (--sm){
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 56px;
+        margin-top:100px;
+
+        &:first-child,&:last-child{
+            align-items: flex-start;
+            .image{
+                width: 65%;
+            }
+        }
+    }
+}
+
+.image{
+    width: 100%;
+    margin-top:20px;
+    @media (--sm){
+        width: 380px;
+    }
+}
+
+.info{
+    flex:1;
+}
+
+.title{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 22px;
+    @media (--sm){
+        font-size: 50px;
+        line-height: 68px;
+    }
+}
+.description{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 180%;
+    margin-top: 28px;
+    @media (--sm){
+        margin-top: 16px;
+    }
+    &>br{
+        margin-bottom: 32px;
+        display: block;
+    }
+}
+
+.checkedList{
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    margin-top: 18px;
+    li{
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 215%;
+        &::before{
+            display: inline-block;
+            content: "";
+            background: url(https://sisu.network/assets/check-bullet.a1b8846c.svg) no-repeat;
+            width: 18px;
+            height: 18px;
+            margin-right: 16px;
+            position: relative;
+            bottom: -3px;
+        }
+    }
+}

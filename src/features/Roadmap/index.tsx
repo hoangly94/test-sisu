@@ -1,24 +1,20 @@
+import { useTranslation } from 'next-i18next';
 import React from 'react';
 import styles from './styles.module.css';
 import Header from '@/features/Header';
 import Banner from './Banner';
-import Milestones from './Reinforcings';
-import Features from './Features';
-import RegisterNow from '@/partials/RegisterNow';
+import Milestones from './Milestones';
 
-const Home = () => {
+const Roadmap = () => {
   return (
     <>
       <Header/>
       <div className={styles.home}>
         <Banner/>
         <Milestones/>
-        <RegisterNow/>
-        <Features/>
-        <RegisterNow/>
       </div>
     </>
   );
 };
 
-export default Home;
+export default Roadmap;

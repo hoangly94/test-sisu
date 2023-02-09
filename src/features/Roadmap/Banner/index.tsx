@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.css';
 import Logo from '@/partials/Logo';
 
-const RegisterNow = () => {
+const Banner = () => {
   return (
     <div className={styles.banner}>
       <div className={styles.logo}>
@@ -19,4 +19,4 @@ const RegisterNow = () => {
   );
 };
 
-export default RegisterNow;
+export default Banner;

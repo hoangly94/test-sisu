@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import React from 'react';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Home from '@/features/Home';
+import Roadmap from '@/features/Roadmap';
 
 const IndexPage: NextPage = () => {
   return (
-    <Home/>
+    <Roadmap/>
   )
 }
 
